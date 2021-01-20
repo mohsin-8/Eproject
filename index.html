@@ -2,17 +2,506 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <!---- Jquery & bootstrap SCRIPTS ---->
+    <!----- SCRIPTS ----->
     <script src="./assets/scripts/bootstrap.min.js"></script>
     <script src="./assets/scripts/jquery-3.5.1.min.js"></script>
 
-    <!---- bootstrap STYLES file ---->
+    <script src="./assets/scripts/JQuery.js"></script>
+    <script src="./assets/scripts/lightslider.js"></script>
+
+    <!---- STYLES ---->
     <link rel="stylesheet" href="./assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/styles/index.css">
+
+    <!----- Light-slider css ----->
+    <link rel="stylesheet" href="./assets/styles/lightslider.css">
+
+    <!----- FAVICON ICON ----->
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <!----- Font Awesome Icons  ----->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Hello World!</h1>
+    
+    <!----- Navigation ----->
+    <nav>
+        <!----- social-link & Tell-number ----->
+        <div class="social-call">
+            <!----- social-links ----->
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <!----- Tell-Number ----->
+            <div class="phone">
+                <span>Call +123456789</span>
+            </div>
+        </div>
+
+        <!------ Menu-bar ------>
+        <div class="navigation">
+            <!--- Logo --->
+            <a href="#" class="logo"><img src="./assets/images/logo.jpg" alt=""></a>
+
+            <!----menu-icon--->
+            <div class="toggle"></div>
+
+            <!--- Menu --->
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Query</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us.</a></li>
+            </ul>
+            <!---- right-menu ---->
+            <div class="right-menu">
+                <!--- Search --->
+                <a href="#" class="search"><li class="fas fa-search"></li></a>
+
+                <!---- User ---->
+                <a href="#" class="user"><li class="fas fa-user"></li></a>
+
+                <!---- Cart-Icon ---->
+                <a href="#"><li class="fas fa-shopping-cart">
+
+                <!----- Number of products in cart ----->
+                <span class="num-cart-product">0</span>
+                </li>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-----Search-bar----->
+    <div class="search-bar">
+        <!----- search-input ---->
+        <div class="search-input">
+            <!---- inupt ---->
+            <input type="text" placeholder="Search For Product">
+            <!--- cancle-btn --->
+            <a href="#" class="search-cancle">
+                <i class="fas fa-times"></i>
+            </a>
+        </div>
+    </div>
+
+    <!------- Login & Sign Up form ------->
+    <div class="form">
+        <!---- login ---->
+        <div class="login-form">
+
+            <!--- cancle-btn --->
+            <a href="#" class="form-cancle">
+                <i class="fas fa-times"></i>
+            </a>
+
+            <!--- heading --->
+            <strong>LOG IN</strong>
+            
+            <!--- Inputs --->
+            <form>
+                <input type="email" placeholder="Example@outlook.com" name="email" required>
+                <input type="password" placeholder="Password" name="password" required>
+
+                <!--- submit-btn --->
+                <input type="submit" value="LOG IN">
+            </form>
+
+            <!---- forget and sign up btn ---->
+            <div class="form-btn">
+                <a href="#" class="forget">Forget Your Password?</a>
+                <a href="#" class="sign-up-btn">Create Accounts</a>
+            </div>
+        </div>
+
+ <!---- Sign-up ---->
+ <div class="signup-form">
+
+    <!--- cancle-btn --->
+    <a href="#" class="form-cancle">
+        <i class="fas fa-times"></i>
+    </a>
+
+    <!--- heading --->
+    <strong>SIGN UP</strong>
+    
+    <!--- Inputs --->
+    <form>
+        <input type="text" placeholder="Full Name" name="fullname" required>
+        <input type="email" placeholder="Example@outlook.com" name="email" required>
+        <input type="password" placeholder="Password" name="password" required>
+
+        <!--- submit-btn --->
+        <input type="submit" value="SIGN UP">
+    </form>
+
+    <!---- forget and sign up btn ---->
+    <div class="form-btn">
+        <a href="#" class="already-account">Already Have Account?</a>
+    </div>
+</div>
+
+    </div>
+
+    <!------- Full Slider -------->
+
+    <ul id="adaptive" class="cs-hidden">
+        <!---- box1 ---->
+        <li class="item-a">
+            <!------box------>
+            <div class="full-slider-box f-slide-1">
+                <!------  slider-text-container  ------->
+                <div class="slider-text-container">
+                    <div class="f-slider-text">
+                    <span>Limited Offer</span>
+                    <strong>30% off <br> with <font>promo code</font></strong>
+                    <a href="#" class="f-slider-btn">Shop Now</a>
+                </div>
+                </div>
+                </div>
+        </li>
+
+        <!---- box1 ---->
+        <li class="item-a">
+            <!------box------>
+            <div class="full-slider-box f-slide-2">
+                <!------  slider-text-container  ------->
+                <div class="slider-text-container">
+                    <div class="f-slider-text">
+                    <span>Limited Offer</span>
+                    <strong>30% off <br> with <font>promo code</font></strong>
+                    <a href="#" class="f-slider-btn">Shop Now</a>
+                </div>
+                </div>
+                </div>
+        </li>
+
+        <!---- box1 ---->
+        <li class="item-a">
+            <!------box------>
+            <div class="full-slider-box f-slide-3">
+                <!------  slider-text-container  ------->
+                <div class="slider-text-container">
+                    <div class="f-slider-text">
+                    <span>Limited Offer</span>
+                    <strong>30% off <br> with <font>promo code</font></strong>
+                    <a href="#" class="f-slider-btn">Shop Now</a>
+                </div>
+                </div>
+                </div>
+        </li>
+
+      </ul>
+
+
+      <!----Featured Categorires---->
+      <div class="feature-heading">
+          <h2>Featured Categories</h2>
+      </div>
+  <!--product-categories-slider---------------------->
+  <ul id="autoWidth" class="container" class="cs-hidden">
+    <!--box-1--------------------->
+    <li class="item">
+        <div class="feature-box">
+            <a href="#">
+                <img src="./assets/images/Agro.jpg">
+            </a>
+        </div>
+        <span>Agro-Product</span>
+    </li>
+    <!--box-2--------------------->
+    <li class="item">
+        <div class="feature-box">
+            <a href="#">
+                <img src="./assets/images/cookingOil.jpg">
+            </a>
+        </div>
+        <span>Cooking Oil</span>
+    </li>
+    <!--box-3--------------------->
+    <li class="item">
+        <div class="feature-box">
+            <a href="#">
+                <img src="./assets/images/spices.jpg">
+            </a>
+        </div>
+        <span>Spices Condiments</span>
+    </li>
+    <!--box-4--------------------->
+    <li class="item">
+        <div class="feature-box">
+            <a href="#">
+                <img src="./assets/images/nutricious.jpg">
+            </a>
+        </div>
+        <span>Nutritious cereals</span>
+    </li>
+    <!--box-5--------------------->
+    <li class="item">
+        <div class="feature-box">
+            <a href="#">
+                <img src="./assets/images/fruitpulps.jpg">
+            </a>
+        </div>
+        <span>Fruit Pulps</span>
+    </li>
+    
+  </ul>
+
+ <!--NEW ARRIVAL-------------------------------->
+ <section class="new-arrival">
+            
+    <!--heading-------->
+    <div class="arrival-heading">
+        <strong>New Arrival</strong>
+        <p>We Provide You World Best Nutritiants</p>
+    </div>
+      <!--products----------------------->
+      <div class="product-container">
+          
+        <!--product-box-1---------->
+          <div class="product-box">
+              <!--product-img------------>
+              <div class="product-img">
+                  <!--add-cart---->
+                  <a href="#" class="add-cart">
+                      <i class="fas fa-shopping-cart"></i>
+                    </a>
+                  <!--img------>
+                <img src="./assets/images/product1.jpg">
+              </div>
+              <!--product-details-------->
+              <div class="product-details">
+                  <a href="#" class="p-name">Oats Bran</a>
+                  <span class="p-price">$22.00</span>
+              </div>
+          </div>
+            <!--product-box-2---------->
+            <div class="product-box">
+                <!--product-img------------>
+                <div class="product-img">
+                    <!--add-cart---->
+                  <a href="#" class="add-cart"><i class="fas fa-shopping-cart"></i></a>
+                  <!--img------>
+                  <img src="./assets/images/product2.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Tortil</a>
+                    <span class="p-price">$22.00</span>
+                </div>
+            </div>
+          <!--product-box-3---------->
+          <div class="product-box">
+            <!--product-img------------>
+            <div class="product-img">
+                <!--add-cart---->
+                <a href="#" class="add-cart"><i class="fas fa-shopping-cart"></i></a>
+                <!--img------>
+              <img src="./assets/images/product3.jpg">
+            </div>
+            <!--product-details-------->
+            <div class="product-details">
+                <a href="#" class="p-name">Fruit Pulps</a>
+                <span class="p-price">$22.00</span>
+            </div>
+        </div>
+          <!--product-box-4---------->
+          <div class="product-box">
+            <!--product-img------------>
+            <div class="product-img">
+                <!--add-cart---->
+                <a href="#" class="add-cart"><i class="fas fa-shopping-cart"></i></a>
+                <!--img------>
+              <img src="./assets/images/product4.jpg">
+            </div>
+            <!--product-details-------->
+            <div class="product-details">
+                <a href="#" class="p-name">Saaf Khas</a>
+                <span class="p-price">$22.00</span>
+            </div>
+        </div>
+          <!--product-box-5---------->
+          <div class="product-box">
+            <!--product-img------------>
+            <div class="product-img">
+                <!--add-cart---->
+                <a href="#" class="add-cart"><i class="fas fa-shopping-cart"></i></a>
+                <!--img------>
+              <img src="./assets/images/product5.jpg">
+            </div>
+            <!--product-details-------->
+            <div class="product-details">
+                <a href="#" class="p-name">Meezan Cooking Oil</a>
+                <span class="p-price">$22.00</span>
+            </div>
+        </div>
+          <!--product-box-6---------->
+          <div class="product-box">
+            <!--product-img------------>
+            <div class="product-img">
+                <!--add-cart---->
+                <a href="#" class="add-cart"><i class="fas fa-shopping-cart"></i></a>
+                <!--img------>
+              <img src="./assets/images/product6.jpg">
+            </div>
+            <!--product-details-------->
+            <div class="product-details">
+                <a href="#" class="p-name">Oats Bran</a>
+                <span class="p-price">$22.00</span>
+            </div>
+        </div>
+          <!--product-box-7---------->
+          <div class="product-box">
+            <!--product-img------------>
+            <div class="product-img">
+                <!--add-cart---->
+                <a href="#" class="add-cart"><i class="fas fa-shopping-cart"></i></a>
+                <!--img------>
+              <img src="./assets/images/product7.jpg">
+            </div>
+            <!--product-details-------->
+            <div class="product-details">
+                <a href="#" class="p-name">Al-Usrah</a>
+                <span class="p-price">$22.00</span>
+            </div>
+        </div>
+          <!--product-box-8---------->
+          <div class="product-box">
+            <!--product-img------------>
+            <div class="product-img">
+                <!--add-cart---->
+                <a href="#" class="add-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <!--img------>
+              <img src="./assets/images/product8.jpg">
+            </div>
+            <!--product-details-------->
+            <div class="product-details">
+                <a href="#" class="p-name">Spices</a>
+                <span class="p-price">$22.00</span>
+            </div>
+        </div>
+      </div>
+
+      <div class="arrival-heading">
+        <strong>Featured Items</strong>
+        <p>We Provide You New Fasion Design Clothes</p>
+    </div>
+      <!--products----------------------->
+      <div class="product-container">
+          
+        <!--product-box-1---------->
+          <div class="product-box">
+              <!--product-img------------>
+              <div class="product-img">
+                  <!--add-cart---->
+                  <a href="#" class="add-cart">
+                      <i class="fas fa-shopping-cart"></i>
+                    </a>
+                  <!--img------>
+                <img src="./assets/images/product9.jpg">
+              </div>
+              <!--product-details-------->
+              <div class="product-details">
+                  <a href="#" class="p-name">Spices Package</a>
+                  <span class="p-price">$22.00</span>
+              </div>
+          </div>
+            <!--product-box-2---------->
+            <div class="product-box">
+                <!--product-img------------>
+                <div class="product-img">
+                    <!--add-cart---->
+                  <a href="#" class="add-cart"><i class="fas fa-shopping-cart"></i></a>
+                  <!--img------>
+                  <img src="./assets/images/product10.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Fruit Pulps Package</a>
+                    <span class="p-price">$22.00</span>
+                </div>
+            </div>
+          <!--product-box-3---------->
+          <div class="product-box">
+            <!--product-img------------>
+            <div class="product-img">
+                <!--add-cart---->
+                <a href="#" class="add-cart"><i class="fas fa-shopping-cart"></i></a>
+                <!--img------>
+              <img src="./assets/images/product11.jpg">
+            </div>
+            <!--product-details-------->
+            <div class="product-details">
+                <a href="#" class="p-name">Family Package</a>
+                <span class="p-price">$22.00</span>
+            </div>
+        </div>
+  </section>
+
+   <!--banner-->
+   <div class="banner-box f-slide-3">
+        
+    <div class="banner-text-container">
+    <div class="banner-text">
+        <strong>30% Off<br/> With <font>Promo Code</font></strong>
+        <a href="#" class="banner-btn">Shop Now</a>
+    </div>
+    </div>
+
+</div> 
+
+
+ <!--services------------------------->
+ <section class="services">
+    <!--services-box---------->
+    <div class="services-box">
+        <i class="fas fa-shipping-fast"></i>
+        <span>Free Shipping</span>
+        <p>Free Shipping for all US order</p>
+    </div>
+    <!--services-box---------->
+    <div class="services-box">
+        <i class="fas fa-headphones-alt"></i>
+        <span>Support 24/7</span>
+        <p>We support 24h a day</p>
+    </div>
+    <!--services-box---------->
+    <div class="services-box">
+        <i class="fas fa-sync"></i>
+        <span>100% Money Back</span>
+        <p>You have 30 days to Return</p>
+    </div>
+    
+</section>
+<!--footer---------------------------->
+<footer>
+    <!--copyright-------------->
+    <span class="copyright">
+        Copyright 2020 - Star Organic Store
+    </span>
+    <!--subcribe---------------->
+    <div class="subscribe">
+        <form>
+        <input type="email" placeholder="Example@gmail.com" required/>
+        <input type="submit" value="Subscribe">
+        </form>
+    </div>
+</footer>
+
+
+
+
+    <script src="./assets/scripts/main.js"></script>
 </body>
 </html>
