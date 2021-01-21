@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body{
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f1f1f1;
+  }
+  
+  .about{
+      background: url(https://images.unsplash.com/photo-1472653525502-fc569e405a74?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=thomas-gamstaetter-IFGVE61AAno-unsplash.jpg) no-repeat left;
+      background-size: 55%;
+      background-color: #fdfdfd;
+      overflow: hidden;
+      padding: 100px 0;
+  
+  }
+  
+  .inner-section{
+      width: 55%;
+      float: right;
+      background-color: #fdfdfd;
+      padding: 140px;
+      box-shadow: 10px 10px 8px rgba(0,0,0,0.3);
+  }
+  
+  .inner-section h1{
+      margin-bottom: 30px;
+      font-size: 30px;
+      font-weight: 900;
+  }
+  
+  .text{
+      font-size: 13px;
+      color: #545454;
+      line-height: 30px;
+      text-align: justify;
+      margin-bottom: 40px;
+  }
+  
+  .skills button{
+      font-size: 22px;
+      text-align: center;
+      letter-spacing: 2px;
+      border:none;
+      border-radius: 20px;
+      padding: 8px;
+      width: 200px;
+  }
+  
