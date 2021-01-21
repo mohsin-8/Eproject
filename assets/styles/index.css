@@ -59,7 +59,8 @@ nav{
 }
 
 .logo img{
-    width: 150px;
+    width: 40px;
+    margin-left: 25px;
 }
 
 .menu{
@@ -72,6 +73,7 @@ nav{
     display: flex;
     text-transform: uppercase;
     font-weight: 500;
+    margin-top: 7%;
 }
 
 .menu li a{
@@ -527,6 +529,7 @@ nav{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: #1b1919;
 }
  
 .banner-text-container{
@@ -656,6 +659,9 @@ footer{
 
 /* MAking Responsive */
 @media(max-width:1010px){
+    .logo{
+        margin-left: 10px;
+    }
     nav{
         position: relative;
     }
@@ -695,12 +701,15 @@ footer{
         margin: 0px;
         padding: 25px;
         border: 1px solid rgba(0,0,0,0.03);
+
     }
     .sale-lable{
         display: none;
     }
     .toggle{
         display: block;
+        margin-left: 9%;
+
     }
     .toggle:before{
         content: '\f0c9';
@@ -718,15 +727,18 @@ footer{
     .full-slider-box,
     .banner-box{
         height: 45vh;
+        background-color: #1b1919;
     }
     .f-slider-text span,
     .banner-text span{
         font-size: 0.9rem;
+        color: #fff;
     }
     .f-slider-text strong,
     .banner-text strong{
         font-size: 2rem;
         line-height: 40px;
+
     }
     .search-input{
         height: 60px;
