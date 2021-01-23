@@ -1,18 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+  
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    background-color: #ffffff;
+}
+
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-  }
-  
-  
-  body{
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #f1f1f1;
-  }
-  
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    width: 100%;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.05);
+    z-index: 100;
+}
+
+.social-call{
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social a{
+    margin: 0px 5px;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.9rem;
+}
+
+.phone{
+    color: rgba(0, 0, 0, 0.7);
+    margin-left: 30px;
+    font-size: 0.9rem;
+}
+
+.social a:hover{
+    color: #0b9d8a;
+    transition: all ease 0.3s;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 45px;
+}
+
+.logo img{
+    width: 40px;
+    margin-left: 25px;
+}
+
+.menu{
+    display: flex;
+    margin-right: 9%;
+}
+
+.menu li{
+    position: relative;
+    margin: 20px;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 7%;
+}
+
+.menu li a{
+    color: #555555;
+}
+
+.right-menu a{
+    margin: 0px 10px;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.menu a:hover,
+.right-menu a:hover,
+.search-cancle:hover,
+.form-cancle:hover{
+    color: #0b9d8a;
+    transition: all ease 0.3s;
+}
+
+.fa-shopping-cart{
+    position: relative;
+}
+
+.num-cart-product{
+    position: absolute;
+    color: #fff;
+    top: -17px;
+    right: -17px;
+    width: 25px;
+    height: 25px;
+    font-size: 0.8rem;
+    border-radius: 50%;
+    background-color: #0b9d8a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+
+.search-bar{
+    width: 100%;
+    height: 300px;
+    background-color: #ffffff;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px -5px 30px rgba(0, 0, 0, 0.1);
+    z-index: 101;
+    animation: search 0.3s;
+}
+
+.search-input{
+    width: 90%;
+    border-bottom: 2px solid #555555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin: 20px;
+}
+
+.search-bar input{
+    width: 100%;
+    padding: 30px;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    margin: 20px;
+    padding: 0px 20px;
+}
+
+.search-cancle{
+    color: #272727;
+    font-size: 2rem;
+    padding-right: 40px;
+}
+
+.search-bar{
+    display: none;
+}
+
+.search-bar-active{
+    display: flex;
+}
+
+@keyframes search{
+    0%{
+        bottom: -300px;
+    }
+    100%{
+        bottom: 0px;
+    }
+}
+
+.form{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 102;
+}
+
+.login-form,
+.signup-form{
+    width: 420px;
+    padding: 20px 10px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    position: relative;
+}
+
+.login-form form,
+.signup-form form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login-form strong,
+.signup-form strong{
+    color: #272727;
+    font-size: 2rem;
+    margin: 2px 7px 7px 7px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.login-form input,
+.signup-form input{
+    width: 90%;
+    height: 45px;
+    margin: 6px 0px;
+    padding: 0px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    outline: none;
+    border-radius: 7px;
+}
+
+.login-form input::placeholder,
+.signup-form input::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.login-form input[type="submit"],
+.signup-form input[type="submit"]{
+    background-color: #0b9d8a;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-btn{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.form-btn a{
+    color: #4d4d4d;
+    font-size: 0.9rem;
+}
+
+.sign-up-btn{
+    border-bottom: 1px solid #868686;
+    line-height: 16px;
+}
+
+.form-cancle{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: #868686;
+}
+
+.login-form,
+.signup-form,
+.form{
+    display: none;
+}
+
+.login-active,
+.login-active .login-form{
+    display: flex;
+    animation: fade 0.3s;
+}
+
+.sign-up-active,
+.sign-up-active .signup-form{
+    display: flex;
+    animation: fade 0.3s;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
   .about{
       background: url(https://images.unsplash.com/photo-1472653525502-fc569e405a74?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=thomas-gamstaetter-IFGVE61AAno-unsplash.jpg) no-repeat left;
       background-size: 55%;
@@ -45,6 +330,7 @@
   }
   
   .skills button{
+      text-decoration: none;
       font-size: 22px;
       text-align: center;
       letter-spacing: 2px;
@@ -53,4 +339,160 @@
       padding: 8px;
       width: 200px;
   }
+
+  .skills button:hover{
+      transition:all ease 0.3s;
+      background-color: #0b9d8a;
+      color: white;
+  }
   
+
+
+  footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.copyright{
+    font-size: 0.9rem;
+    color: #4e4e4e;
+    letter-spacing: 1px;
+}
+.subscribe input{
+    width:240px;
+    height: 43px;
+    padding: 0px 20px;
+    border: 1px solid rgba(0,0,0,0.1);
+    outline: none;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.05);
+}
+.subscribe input[type="submit"]{
+    width:120px;
+    background-color: #0b9d8a;
+    color: #ffffff;
+    margin: 0px 5px;
+}
+
+/* Responsive */
+/* MAking Responsive */
+@media(max-width:1010px){
+    .logo{
+        margin-left: 10px;
+    }
+    nav{
+        position: relative;
+    }
+    .navigation{
+        height: 80px;
+    }
+    .fix-nav{
+        height: 80px;
+    }
+    .menu{
+        position: absolute;
+        top: 110px;
+        left: 0px;
+        background-color: #ffffff;
+        border-bottom: 4px solid #0b9d8a;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        z-index: 102;
+        flex-direction: column;
+        display: none;
+ 
+    }
+    .fix-nav .menu{
+        top: 80px;
+    }
+    .menu li{
+        width:100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .navigation .menu li a{
+        width:100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        margin: 0px;
+        padding: 25px;
+        border: 1px solid rgba(0,0,0,0.03);
+
+    }
+    .sale-lable{
+        display: none;
+    }
+    .toggle{
+        display: block;
+        margin-left: 9%;
+
+    }
+    .toggle:before{
+        content: '\f0c9';
+        font-family: fontAwesome;
+        line-height: 30px;
+        z-index: 1;
+        cursor: pointer;
+    }
+    .toggle.active:before{
+        content: '\f00d';
+    }
+    .navigation.active .menu{
+        display: block;
+    }
+}
+@media(max-width:600px){
+    .navigation{
+        padding: 10px;
+    }
+    .copyright{
+        margin: 20px 0px;
+        text-align: center;
+    }
+    .subscribe{
+        width:100%;
+    }
+    .subscribe form{
+        flex-wrap: nowrap;
+        display: flex;
+        width:100%;
+    }
+    .subscribe input{
+        width:100%;
+        flex-grow: 1;
+    }
+    .login-form,
+    .sign-up-form{
+        width:90%;
+    }
+     .about{
+            padding: 0;
+    }
+        .inner-section{
+            padding: 60px;
+    }
+        .skills button{
+        font-size: 19px;
+            padding:5px;
+            width: 160px;
+    }
+
+@media screen and (max-width:1200px){
+    .inner-section{
+        padding: 80px;
+    }
+}
+@media screen and (max-width:1000px){
+    .about{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-section{
+        width: 100%;
+    }
+}

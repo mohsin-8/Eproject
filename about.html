@@ -25,14 +25,156 @@
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+  <!----- Navigation ----->
+  <nav>
+    <!----- social-link & Tell-number ----->
+    <div class="social-call">
+        <!----- social-links ----->
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <!----- Tell-Number ----->
+        <div class="phone">
+            <span>Call +123456789</span>
+        </div>
+    </div>
+
+    <!------ Menu-bar ------>
+    <div class="navigation">
+        <!--- Logo --->
+        <a href="#" class="logo"><img src="./assets/images/logo.png" alt=""></a>
+
+        <!----menu-icon--->
+        <div class="toggle"></div>
+
+        <!--- Menu --->
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./products/product page.html">Products</a></li>
+            <li><a href="#">Query</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="#">Contact Us.</a></li>
+        </ul>
+        <!---- right-menu ---->
+        <div class="right-menu">
+            <!--- Search --->
+            <a href="#" class="search"><li class="fas fa-search"></li></a>
+
+            <!---- User ---->
+            <a href="#" class="user"><li class="fas fa-user"></li></a>
+
+            <!---- Cart-Icon ---->
+            <a href="#"><li class="fas fa-shopping-cart">
+
+            <!----- Number of products in cart ----->
+            <span class="num-cart-product">0</span>
+            </li>
+            </a>
+
+        </div>
+    </div>
+</nav>
+
+<!-----Search-bar----->
+<div class="search-bar">
+    <!----- search-input ---->
+    <div class="search-input">
+        <!---- inupt ---->
+        <input type="text" placeholder="Search For Product">
+        <!--- cancle-btn --->
+        <a href="#" class="search-cancle">
+            <i class="fas fa-times"></i>
+        </a>
+    </div>
+</div>
+
+<!------- Login & Sign Up form ------->
+<div class="form">
+    <!---- login ---->
+    <div class="login-form">
+
+        <!--- cancle-btn --->
+        <a href="#" class="form-cancle">
+            <i class="fas fa-times"></i>
+        </a>
+
+        <!--- heading --->
+        <strong>LOG IN</strong>
+        
+        <!--- Inputs --->
+        <form>
+            <input type="email" placeholder="Example@outlook.com" name="email" required>
+            <input type="password" placeholder="Password" name="password" required>
+
+            <!--- submit-btn --->
+            <input type="submit" value="LOG IN">
+        </form>
+
+        <!---- forget and sign up btn ---->
+        <div class="form-btn">
+            <a href="#" class="forget">Forget Your Password?</a>
+            <a href="#" class="sign-up-btn">Create Accounts</a>
+        </div>
+    </div>
+
+<!---- Sign-up ---->
+<div class="signup-form">
+
+<!--- cancle-btn --->
+<a href="#" class="form-cancle">
+    <i class="fas fa-times"></i>
+</a>
+
+<!--- heading --->
+<strong>SIGN UP</strong>
+
+<!--- Inputs --->
+<form>
+    <input type="text" placeholder="Full Name" name="fullname" required>
+    <input type="email" placeholder="Example@outlook.com" name="email" required>
+    <input type="password" placeholder="Password" name="password" required>
+
+    <!--- submit-btn --->
+    <input type="submit" value="SIGN UP">
+</form>
+
+<!---- forget and sign up btn ---->
+<div class="form-btn">
+    <a href="#" class="already-account">Already Have Account?</a>
+</div>
+</div>
+
+</div>
+
+
     <div class="about">
         <div class="inner-section">
             <h1>About Us</h1>
-            <p class="text">Organic agricultural methods are internationally regulated and legally enforced by many nations, based in large part on the standards set by the International Federation of Organic Agriculture Movements (IFOAM), an international umbrella organization for organic farming organizations established in 1972. Organic agriculture can be defined as "an integrated farming system that strives for sustainability, the enhancement of soil fertility and biological diversity while, with rare exceptions, prohibiting synthetic pesticides, antibiotics, synthetic fertilizers, genetically modified organisms, and growth hormones"."Since 1990, the market for organic food and other products has grown rapidly, reaching $63 billion worldwide in 2012. This demand has driven a similar increase in organically managed farmland that grew from 2001 to 2011 at a compounding rate of 8.9% per annum. As of 2018, approximately 71,500,000 hectares (177,000,000 acres) worldwide were farmed organically, representing approximately 1.5 percent of total world farmland. "</p>
+            <p class="text">Organic agricultural methods are internationally regulated and legally enforced by many nations, based in large part on the standards set by the International Federation of Organic Agriculture Movements (IFOAM), an international umbrella organization for organic farming organizations established in 1972. Organic agriculture can be defined as "an integrated farming system that strives for sustainability, the enhancement of soil fertility and biological diversity while, with rare exceptions, prohibiting synthetic pesticides, antibiotics, synthetic fertilizers, genetically modified organisms, and growth hormones</p>
             <div class="skills">
                 <button>Contact Us</button>
             </div>
         </div>
     </div>
+
+    <!--footer---------------------------->
+<footer>
+    <!--copyright-------------->
+    <span class="copyright">
+        Copyright 2020 - Star Organic Store
+    </span>
+    <!--subcribe---------------->
+    <div class="subscribe">
+        <form>
+        <input type="email" placeholder="Example@gmail.com" required/>
+        <input type="submit" value="Subscribe">
+        </form>
+    </div>
+</footer>
+
 </body>
 </html>
