@@ -63,13 +63,13 @@ nav{
 }
 
 .logo img{
-    width: 100px;
+    width: 40px;
     margin-left: 25px;
 }
 
 .menu{
     display: flex;
-    margin-right: 9%;
+    margin-top: -1%;
 }
 
 .menu li{
@@ -352,6 +352,7 @@ footer{
 @media(max-width:1010px){
     .logo{
         margin-left: 10px;
+        width: 40%;
     }
     nav{
         position: relative;
@@ -391,7 +392,6 @@ footer{
         margin: 0px;
         padding: 25px;
         border: 1px solid rgba(0,0,0,0.03);
-
     }
     .sale-lable{
         display: none;
@@ -442,6 +442,7 @@ footer{
     }
 }
 @media(max-width:600px){
+
     .navigation{
         padding: 10px;
     }
@@ -846,7 +847,7 @@ input:focus, textarea:focus, keygen:focus, select:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(https://acabcmis.gov.in/img/010.jpg);
+    background-image: url(./../images/banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
