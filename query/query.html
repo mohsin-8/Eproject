@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
- <!----- SCRIPTS ----->
- <script src="./scripts/bootstrap.min.js"></script>
- <script src="./scripts/jquery-3.5.1.min.js"></script>
+    <!----- SCRIPTS ----->
+    <script src="./scripts/bootstrap.min.js"></script>
+    <script src="./scripts/jquery-3.5.1.min.js"></script>
 
- <script src="./scripts/JQuery.js"></script>
- <script src="./scripts/lightslider.js"></script>
+    <script src="./scripts/JQuery.js"></script>
+    <script src="./scripts/lightslider.js"></script>
 
- <!---- STYLES ---->
- <link rel="stylesheet" href="./styles/bootstrap.min.css">
- <link rel="stylesheet" href="./styles/query.css">
+    <!---- STYLES ---->
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/query.css">
 
- <!----- Light-slider css ----->
- <link rel="stylesheet" href="./styles/lightslider.css">
+    <!----- Light-slider css ----->
+    <link rel="stylesheet" href="./styles/lightslider.css">
 
- <!----- FAVICON ICON ----->
- <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
- <!----- Font Awesome Icons  ----->
- <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <!----- FAVICON ICON ----->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <!----- Font Awesome Icons  ----->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 
 </head>
+
 <body>
     <!----- Navigation ----->
     <nav>
@@ -53,27 +55,32 @@
 
             <!--- Menu --->
             <ul class="menu">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./products/product page.html">Products</a></li>
-                <li><a href="#">Query</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./contactus.html">Contact Us.</a></li>
-                <li><a href="./Gallery/gallery.html">Gallery</a></li>
+                <li><a href="./../index.html">Home</a></li>
+                <li><a href="./../products/product page.html">Products</a></li>
+                <li><a href="./query.html">Query</a></li>
+                <li><a href="./../about.html">About</a></li>
+                <li><a href="./../contactus.html">Contact Us.</a></li>
+                <li><a href="./../Gallery/gallery.html">Gallery</a></li>
             </ul>
             <!---- right-menu ---->
             <div class="right-menu">
                 <!--- Search --->
-                <a href="#" class="search"><li class="fas fa-search"></li></a>
+                <a href="#" class="search">
+                    <li class="fas fa-search"></li>
+                </a>
 
                 <!---- User ---->
-                <a href="#" class="user"><li class="fas fa-user"></li></a>
+                <a href="#" class="user">
+                    <li class="fas fa-user"></li>
+                </a>
 
                 <!---- Cart-Icon ---->
-                <a href="#"><li class="fas fa-shopping-cart">
+                <a href="#">
+                    <li class="fas fa-shopping-cart">
 
-                <!----- Number of products in cart ----->
-                <span class="num-cart-product">0</span>
-                </li>
+                        <!----- Number of products in cart ----->
+                        <span class="num-cart-product">0</span>
+                    </li>
                 </a>
 
             </div>
@@ -105,7 +112,7 @@
 
             <!--- heading --->
             <strong>LOG IN</strong>
-            
+
             <!--- Inputs --->
             <form>
                 <input type="email" placeholder="Example@outlook.com" name="email" required>
@@ -122,52 +129,116 @@
             </div>
         </div>
 
- <!---- Sign-up ---->
- <div class="signup-form">
+        <!---- Sign-up ---->
+        <div class="signup-form">
 
-    <!--- cancle-btn --->
-    <a href="#" class="form-cancle">
-        <i class="fas fa-times"></i>
-    </a>
+            <!--- cancle-btn --->
+            <a href="#" class="form-cancle">
+                <i class="fas fa-times"></i>
+            </a>
 
-    <!--- heading --->
-    <strong>SIGN UP</strong>
-    
-    <!--- Inputs --->
-    <form>
-        <input type="text" placeholder="Full Name" name="fullname" required>
-        <input type="email" placeholder="Example@outlook.com" name="email" required>
-        <input type="password" placeholder="Password" name="password" required>
+            <!--- heading --->
+            <strong>SIGN UP</strong>
 
-        <!--- submit-btn --->
-        <input type="submit" value="SIGN UP">
-    </form>
-
-    <!---- forget and sign up btn ---->
-    <div class="form-btn">
-        <a href="#" class="already-account">Already Have Account?</a>
-    </div>
-</div>
-    </div>
-
-    <!------Footer------>
-    <footer>
-        <!--copyright-------------->
-        <span class="copyright">
-            Copyright 2020 - Star Organic Store
-        </span>
-        <!--subcribe---------------->
-        <div class="subscribe">
+            <!--- Inputs --->
             <form>
-            <input type="email" placeholder="Example@gmail.com" required/>
-            <input type="submit" value="Subscribe">
+                <input type="text" placeholder="Full Name" name="fullname" required>
+                <input type="email" placeholder="Example@outlook.com" name="email" required>
+                <input type="password" placeholder="Password" name="password" required>
+
+                <!--- submit-btn --->
+                <input type="submit" value="SIGN UP">
             </form>
+
+            <!---- forget and sign up btn ---->
+            <div class="form-btn">
+                <a href="#" class="already-account">Already Have Account?</a>
+            </div>
         </div>
-    </footer>
+    </div>
+
+    <!---------Content---------->
+
+
+    <div class="p-4 p-md-5 mb-4 text-white rounded " style="background-color: #0b9d8a;">
+        <div class="col-md-6 px-0">
+            <h1 class="display-4 font-poppins">Help and Support</h1>
+            <p class="lead my-3">You can contact Our help desk or submit a query from the contact information given.</p>
+        </div>
+    </div>
+
+
+    <div class="container my-4">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <h3 class="mb-0">The Addington Fund</h3>
+                        <p class="card-text mb-auto my-3">is a truly unique charity that helps farmers in severe financial difficulty. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6" >
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <h3 class="mb-0">RSABI</h3>
+                        <p class="mb-auto my-3">supports people from Scottish agriculture emotionally, practically and financially in times of need. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <article class="blog-post my-5">
+            <h2 class="blog-post-title my-4">The Royal Agricultural Benevolent Institution</h2>
     
-    
-    
-    
+            <p>helps farming people of all ages who are on low incomes and have few savings.</p>
+
+            <p>Support includes one-off and regular grants, the provision of essential household and specialist equipment.</p>
+            <p>For working farmers, R.A.B.I may fund relief farm staff and training to increase off-farm income. For farmers/farmworkers and their dependants who are retired, or those no longer working due to long-term health conditions, we can pay towards care home, home-help and other costs.</p>
+          </article>
+
+
+
+          <form>
+            <div class="mb-3 my-4">
+                <label for="exampleFullName" class="form-label">Full Name</label>
+                <input type="Name" class="form-control" id="exampleFullName" aria-describedby="fullname">
+              </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn" style="background-color: #0b9d8a; color: #fff;">Submit</button>
+          </form>
+        <!-----End of Content------>
+
+        <!------Footer------>
+        <footer>
+            <!--copyright-------------->
+            <span class="copyright">
+                Copyright 2020 - Star Organic Store
+            </span>
+            <!--subcribe---------------->
+            <div class="subscribe">
+                <form>
+                    <input type="email" placeholder="Example@gmail.com" required />
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+        </footer>
+
+
+
+
         <script src="./scripts/main.js"></script>
 </body>
+
 </html>
