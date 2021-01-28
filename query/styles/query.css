@@ -346,6 +346,7 @@ footer{
 @media(max-width:1010px){
     .logo{
         margin-left: 10px;
+        margin-top: -2%;
     }
     nav{
         position: relative;
@@ -446,3 +447,4 @@ footer{
         width:90%;
     }
 }
+
