@@ -65,6 +65,7 @@ nav{
 
 .menu{
     display: flex;
+    
 }
 
 .menu li{
@@ -83,8 +84,9 @@ nav{
     margin: 0px 10px;
     font-size: 1.2rem;
     color: rgba(0, 0, 0, 0.7);
-    margin-left: -6%;
-    padding-right: 5px;
+    margin-left: -4%;
+    padding-right: 10px;
+    margin: 3px;
 }
 
 .menu a:hover,

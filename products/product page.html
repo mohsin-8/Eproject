@@ -1,130 +1,134 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Products | Star Organic Farm</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./assets/styles/style.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-    <!-- Font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" crossorigin="anonymous" />
+  <!----- SCRIPTS ----->
+  <script src="./assets/scripts/bootstrap.min.js"></script>
+  <script src="./assets/scripts/jquery-3.5.1.min.js"></script>
 
-    <!---SCRIPTS---->
-    <script src="./assets/scripts/bootstrap.min.js"></script>
-    <script src="./assets/scripts/jquery-3.5.1.min.js"></script>
-    <script src="./assets/scripts/JQuery.js"></script>
-    <script src="./assets/scripts/lightslider.js"></script>
+  <script src="./assets/scripts/JQuery.js"></script>
+  <script src="./assets/scripts/lightslider.js"></script>
 
-    <!---Favicon---->
-    <link rel="shortcut icon" href="./../assets/images/logo.png" type="image/x-icon">
-  </head>
-  <body>
-    
-    <!-- header -->
-   <!----- Navigation ----->
-   <nav>
-    <!----- social-link & Tell-number ----->
-    <div class="social-call">
-        <!----- social-links ----->
-        <div class="social">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
-        <!----- Tell-Number ----->
-        <div class="phone">
-            <span>Call +123456789</span>
-        </div>
-    </div>
+  <!---- STYLES ---->
+  <link rel="stylesheet" href="./assets/styles/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/styles/product.css">
 
-    <!------ Menu-bar ------>
-    <div class="navigation">
-        <!--- Logo --->
-        <a href="./../index.html" class="logo"><img src="./../assets/images/logo.png" alt=""></a>
+  <!----- Light-slider css ----->
+  <link rel="stylesheet" href="./assets/styles/lightslider.css">
 
-        <!----menu-icon--->
-        <div class="toggle"></div>
+  <!----- FAVICON ICON ----->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+  <!----- Font Awesome Icons  ----->
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 
-        <!--- Menu --->
-        <ul class="menu">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./product page.html">Products</a></li>
-            <li><a href="./../query/query.html">Query</a></li>
-            <li><a href="./../about.html">About</a></li>
-            <li><a href="../contactus.html">Contact Us.</a></li>
-            <li><a href="../Gallery/gallery.html">Gallery</a></li>
-        </ul>
-        <!---- right-menu ---->
-        <div class="right-menu">
-            <!--- Search --->
-            <a href="#" class="search"><li class="fas fa-search"></li></a>
+</head>
+<body>
+  
+<!----- Navigation ----->
+<nav>
+  <!----- social-link & Tell-number ----->
+  <div class="social-call">
+      <!----- social-links ----->
+      <div class="social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <!----- Tell-Number ----->
+      <div class="phone">
+          <span>Call +123456789</span>
+      </div>
+  </div>
 
-            <!---- User ---->
-            <a href="#" class="user"><li class="fas fa-user"></li></a>
+  <!------ Menu-bar ------>
+  <div class="navigation">
+      <!--- Logo --->
+      <a href="./index.html" class="logo"><img src="./assets/images/logo.png" alt=""></a>
 
-            <!---- Cart-Icon ---->
-            <a href="#"><li class="fas fa-shopping-cart">
+      <!----menu-icon--->
+      <div class="toggle"></div>
 
-            <!----- Number of products in cart ----->
-            <span class="num-cart-product">0</span>
-            </li>
-            </a>
+      <!--- Menu --->
+      <ul class="menu">
+          <li><a href="./../index.html">Home</a></li>
+          <li><a href="./product page.html">Products</a></li>
+          <li><a href="./../query/query.html">Query</a></li>
+          <li><a href="./../about.html">About</a></li>
+          <li><a href="./../contactus.html">Contact Us.</a></li>
+          <li><a href="./../Gallery/gallery.html">Gallery</a></li>
+      </ul>
+      <!---- right-menu ---->
+      <div class="right-menu">
+          <!--- Search --->
+          <a href="#" class="search"><li class="fas fa-search"></li></a>
 
-        </div>
-    </div>
+          <!---- User ---->
+          <a href="#" class="user"><li class="fas fa-user"></li></a>
+
+          <!---- Cart-Icon ---->
+          <a href="#"><li class="fas fa-shopping-cart">
+
+          <!----- Number of products in cart ----->
+          <span class="num-cart-product">0</span>
+          </li>
+          </a>
+
+      </div>
+  </div>
 </nav>
 
 <!-----Search-bar----->
 <div class="search-bar">
-    <!----- search-input ---->
-    <div class="search-input">
-        <!---- inupt ---->
-        <input type="text" placeholder="Search For Product">
-        <!--- cancle-btn --->
-        <a href="#" class="search-cancle">
-            <i class="fas fa-times"></i>
-        </a>
-    </div>
+  <!----- search-input ---->
+  <div class="search-input">
+      <!---- inupt ---->
+      <input type="text" placeholder="Search For Product">
+      <!--- cancle-btn --->
+      <a href="#" class="search-cancle">
+          <i class="fas fa-times"></i>
+      </a>
+  </div>
 </div>
 
 <!------- Login & Sign Up form ------->
 <div class="form">
-    <!---- login ---->
-    <div class="login-form">
+  <!---- login ---->
+  <div class="login-form">
 
-        <!--- cancle-btn --->
-        <a href="#" class="form-cancle">
-            <i class="fas fa-times"></i>
-        </a>
+      <!--- cancle-btn --->
+      <a href="#" class="form-cancle">
+          <i class="fas fa-times"></i>
+      </a>
 
-        <!--- heading --->
-        <strong>LOG IN</strong>
-        
-        <!--- Inputs --->
-        <form>
-            <input type="email" placeholder="Example@outlook.com" name="email" required>
-            <input type="password" placeholder="Password" name="password" required>
+      <!--- heading --->
+      <strong>LOG IN</strong>
+      
+      <!--- Inputs --->
+      <form>
+          <input type="email" placeholder="Example@outlook.com" name="email" required>
+          <input type="password" placeholder="Password" name="password" required>
 
-            <!--- submit-btn --->
-            <input type="submit" value="LOG IN">
-        </form>
+          <!--- submit-btn --->
+          <input type="submit" value="LOG IN">
+      </form>
 
-        <!---- forget and sign up btn ---->
-        <div class="form-btn">
-            <a href="#" class="forget">Forget Your Password?</a>
-            <a href="#" class="sign-up-btn">Create Accounts</a>
-        </div>
-    </div>
+      <!---- forget and sign up btn ---->
+      <div class="form-btn">
+          <a href="#" class="forget">Forget Your Password?</a>
+          <a href="#" class="sign-up-btn">Create Accounts</a>
+      </div>
+  </div>
 
 <!---- Sign-up ---->
 <div class="signup-form">
 
 <!--- cancle-btn --->
 <a href="#" class="form-cancle">
-    <i class="fas fa-times"></i>
+  <i class="fas fa-times"></i>
 </a>
 
 <!--- heading --->
@@ -132,314 +136,319 @@
 
 <!--- Inputs --->
 <form>
-    <input type="text" placeholder="Full Name" name="fullname" required>
-    <input type="email" placeholder="Example@outlook.com" name="email" required>
-    <input type="password" placeholder="Password" name="password" required>
+  <input type="text" placeholder="Full Name" name="fullname" required>
+  <input type="email" placeholder="Example@outlook.com" name="email" required>
+  <input type="password" placeholder="Password" name="password" required>
 
-    <!--- submit-btn --->
-    <input type="submit" value="SIGN UP">
+  <!--- submit-btn --->
+  <input type="submit" value="SIGN UP">
 </form>
 
 <!---- forget and sign up btn ---->
 <div class="form-btn">
-    <a href="#" class="already-account">Already Have Account?</a>
+  <a href="#" class="already-account">Already Have Account?</a>
 </div>
 </div>
-
 </div>
-      <div class = "head-body container">
-        <div class = "head-body-content">
-          <h1 class = "head-title">
-            Products by Star Organic  
-           </h1>
-          <p class = "text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nam repudiandae aliquam ullam nulla sunt voluptate dolorem cumque sed corporis, debitis iste odit necessitatibus repellat!
-          </p>
-          <button type = "button" class = "btn">
-            shop now
-          </button>
-        </div>
 
-        <div class = "head-body-img">
-          <img src = "assets/images/home.png" alt = "header image">
+<!--------Content--------->
+
+<div class = "head-body container">
+  <div class = "head-body-content">
+    <h1 class = "head-title">
+      Products by Star Organic  
+     </h1>
+    <p class = "text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nam repudiandae aliquam ullam nulla sunt voluptate dolorem cumque sed corporis, debitis iste odit necessitatibus repellat!
+    </p>
+    <button type = "button" class = "btn">
+      shop now
+    </button>
+  </div>
+
+  <div class = "head-body-img">
+    <img src = "assets/images/home.png" alt = "header image">
+  </div>
+</div>
+</header>
+<!-- end of header -->
+
+<!-- trending product -->
+<section class = "trend">
+<div class = "container">
+  <div class = "title">
+    <h4>trending now</h4>
+    <h2>best selling product</h2>
+  </div>
+
+  <div class = "trend-grid">
+    <!-- item -->
+    <div class = "trend-item">
+      <img src = "assets/images/fruitpulps.jpg" alt = "best product" style="height:  250px;">
+      <div class = "trend-item-content">
+        <h4>Refreshing Lemonade</h4>
+        <h4>$60.00</h4>
+        <div class = "stars">
+          <span><i class = "fas fa-star"></i></span>
+          <span><i class = "fas fa-star"></i></span>
+          <span><i class = "fas fa-star"></i></span>
+          <span><i class = "fas fa-star"></i></span>
+          <span><i class = "far fa-star"></i></span>
+        </div>1
+        <span class = "chevron-icon">
+          <i class = "fas fa-chevron-right"></i>
+        </span>
+      </div>
+    </div>
+    <!-- end of item -->
+    <!-- item -->
+    <div class = "trend-item">
+      <img src = "assets/images/Agro.jpg" alt = "best product" style="height:  250px;">
+      <div class = "trend-item-content">
+        <h4>Argo Product</h4>
+        <h4>$80.00</h4>
+        <div class = "stars">
+          <span><i class = "fas fa-star"></i></span>
+          <span><i class = "fas fa-star"></i></span>
+          <span><i class = "fas fa-star"></i></span>
+          <span><i class = "fas fa-star"></i></span>
+          <span><i class = "far fa-star"></i></span>
+        </div>
+        <span class = "chevron-icon">
+          <i class = "fas fa-chevron-right"></i>
+        </span>
+      </div>
+    </div>
+    <!-- end of item -->
+    <!-- item -->
+    <div class = "trend-item">
+      <img src = "assets/images/nutricious.jpg" alt = "best product" style="height:  250px;">
+      <div class = "trend-item-content">
+        <h4>kelox Nutrious cornflakes</h4>
+        <h4>$30.00</h4>
+        <div class = "stars">
+          <span><i class = "fas fa-star"></i></span>
+          <span><i class = "fas fa-star"></i></span>
+          <span><i class = "fas fa-star"></i></span>
+          <span><i class = "fas fa-star"></i></span>
+          <span><i class = "far fa-star"></i></span>
+        </div>
+        <span class = "chevron-icon">
+          <i class = "fas fa-chevron-right"></i>
+        </span>
+      </div>
+    </div>
+    <!-- end of item -->
+  </div>
+</div>
+</section>
+<!-- end of trending product -->
+
+<div class = "underline"></div>
+
+<!-- featured product -->
+<section class = "featured">
+<div class = "container">
+  <!-- item -->
+  <div class = "featured-item">
+    <div class = "featured-item-img">
+      <img src = "assets/images/product6.jpg" alt = "feature image">
+    </div>
+    <div class = "featured-item-content">
+      <div class = "title">
+        <h4>featured product </h4>
+        <h2>Urban Platter Otas</h2>
+        <p class = "item-price">$55.00</p>
+      </div>
+      <p class = "text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quasi consequatur veniam, veritatis necessitatibus rem voluptas pariatur doloremque id culpa, eveniet, ratione libero eos fuga.
+      </p>
+      <div class = "featured-btns">
+        <button type = "button" class = "btn">Explore</button>
+        <button type = "button" class = "btn">Purchase</button>
+      </div>
+    </div>
+  </div>
+  <!-- end of item -->
+  <!-- item -->
+  <div class = "featured-item">
+    <div class = "featured-item-img">
+      <img src = "assets/images/cookingOil.jpg" alt = "feature image">
+    </div>
+    <div class = "featured-item-content">
+      <div class = "title">
+        <h4>featured product </h4>
+        <h2>Pompeian Grapessd Oil</h2>
+        <p class = "item-price">$42.00</p>
+      </div>
+      <p class = "text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quasi consequatur veniam, veritatis necessitatibus rem voluptas pariatur doloremque id culpa, eveniet, ratione libero eos fuga.
+      </p>
+      <div class = "featured-btns">
+        <button type = "button" class = "btn">Explore</button>
+        <button type = "button" class = "btn">Purchase</button>
+      </div>
+    </div>
+  </div>
+  <!-- end of item -->
+  <!-- item -->
+  <div class = "featured-item">
+    <div class = "featured-item-img">
+      <img src = "assets/images/spices.jpg" alt = "feature image">
+    </div>
+    <div class = "featured-item-content">
+      <div class = "title">
+        <h4>featured product </h4>
+        <h2>Orignal Sub-Continent Spices</h2>
+        <p class = "item-price">$78.00</p>
+      </div>
+      <p class = "text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quasi consequatur veniam, veritatis necessitatibus rem voluptas pariatur doloremque id culpa, eveniet, ratione libero eos fuga.
+      </p>
+      <div class = "featured-btns">
+        <button type = "button" class = "btn">Explore</button>
+        <button type = "button" class = "btn">Purchase</button>
+      </div>
+    </div>
+  </div>
+  <!-- end of item -->
+  <!-- item -->
+  <div class = "featured-item">
+    <div class = "featured-item-img">
+      <img src = "assets/images/product3.jpg" alt = "feature image">
+    </div>
+    <div class = "featured-item-content">
+      <div class = "title">
+        <h4>featured product </h4>
+        <h2>Fruit Pulps</h2>
+        <p class = "item-price">$90.55</p>
+      </div>
+      <p class = "text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quasi consequatur veniam, veritatis necessitatibus rem voluptas pariatur doloremque id culpa, eveniet, ratione libero eos fuga.
+      </p>
+      <div class = "featured-btns">
+        <button type = "button" class = "btn">Explore</button>
+        <button type = "button" class = "btn">Purchase</button>
+      </div>
+    </div>
+  </div>
+  <!-- end of item -->
+</div>
+</section>
+<!-- end of featured product -->
+
+<!-- blog -->
+<section class = "blog">
+<div class = "container">
+  <div class = "title">
+    <h4>daily update</h4>
+    <h2>latest blog</h2>
+  </div>
+
+  <div class = "blog-grid">
+    <!-- item -->
+    <div class = "blog-item">
+      <div class = "blog-item-img">
+        <img src = "assets/images/product8.jpg" alt = "blog image">
+      </div>
+      <div class = "blog-item-content">
+        <a href = "#">creative ideas for decoration</a>
+        <div>
+          <span>january 20 | design | furniture</span>
         </div>
       </div>
-    </header>
-    <!-- end of header -->
-
-    <!-- trending product -->
-    <section class = "trend">
-      <div class = "container">
-        <div class = "title">
-          <h4>trending now</h4>
-          <h2>best selling product</h2>
-        </div>
-
-        <div class = "trend-grid">
-          <!-- item -->
-          <div class = "trend-item">
-            <img src = "assets/images/fruitpulps.jpg" alt = "best product" style="height:  250px;">
-            <div class = "trend-item-content">
-              <h4>Refreshing Lemonade</h4>
-              <h4>$60.00</h4>
-              <div class = "stars">
-                <span><i class = "fas fa-star"></i></span>
-                <span><i class = "fas fa-star"></i></span>
-                <span><i class = "fas fa-star"></i></span>
-                <span><i class = "fas fa-star"></i></span>
-                <span><i class = "far fa-star"></i></span>
-              </div>1
-              <span class = "chevron-icon">
-                <i class = "fas fa-chevron-right"></i>
-              </span>
-            </div>
-          </div>
-          <!-- end of item -->
-          <!-- item -->
-          <div class = "trend-item">
-            <img src = "assets/images/Agro.jpg" alt = "best product" style="height:  250px;">
-            <div class = "trend-item-content">
-              <h4>Argo Product</h4>
-              <h4>$80.00</h4>
-              <div class = "stars">
-                <span><i class = "fas fa-star"></i></span>
-                <span><i class = "fas fa-star"></i></span>
-                <span><i class = "fas fa-star"></i></span>
-                <span><i class = "fas fa-star"></i></span>
-                <span><i class = "far fa-star"></i></span>
-              </div>
-              <span class = "chevron-icon">
-                <i class = "fas fa-chevron-right"></i>
-              </span>
-            </div>
-          </div>
-          <!-- end of item -->
-          <!-- item -->
-          <div class = "trend-item">
-            <img src = "assets/images/nutricious.jpg" alt = "best product" style="height:  250px;">
-            <div class = "trend-item-content">
-              <h4>kelox Nutrious cornflakes</h4>
-              <h4>$30.00</h4>
-              <div class = "stars">
-                <span><i class = "fas fa-star"></i></span>
-                <span><i class = "fas fa-star"></i></span>
-                <span><i class = "fas fa-star"></i></span>
-                <span><i class = "fas fa-star"></i></span>
-                <span><i class = "far fa-star"></i></span>
-              </div>
-              <span class = "chevron-icon">
-                <i class = "fas fa-chevron-right"></i>
-              </span>
-            </div>
-          </div>
-          <!-- end of item -->
+    </div>
+    <!-- end of item -->
+    <!-- item -->
+    <div class = "blog-item">
+      <div class = "blog-item-img">
+        <img src = "assets/images/product2.jpg" alt = "blog image">
+      </div>
+      <div class = "blog-item-content">
+        <a href = "#">decorate your home with the most modern furnishings.</a>
+        <div>
+          <span>january 25 | design | furniture</span>
         </div>
       </div>
-    </section>
-    <!-- end of trending product -->
-
-    <div class = "underline"></div>
-
-    <!-- featured product -->
-    <section class = "featured">
-      <div class = "container">
-        <!-- item -->
-        <div class = "featured-item">
-          <div class = "featured-item-img">
-            <img src = "assets/images/product6.jpg" alt = "feature image">
-          </div>
-          <div class = "featured-item-content">
-            <div class = "title">
-              <h4>featured product </h4>
-              <h2>Urban Platter Otas</h2>
-              <p class = "item-price">$55.00</p>
-            </div>
-            <p class = "text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quasi consequatur veniam, veritatis necessitatibus rem voluptas pariatur doloremque id culpa, eveniet, ratione libero eos fuga.
-            </p>
-            <div class = "featured-btns">
-              <button type = "button" class = "btn">Explore</button>
-              <button type = "button" class = "btn">Purchase</button>
-            </div>
-          </div>
-        </div>
-        <!-- end of item -->
-        <!-- item -->
-        <div class = "featured-item">
-          <div class = "featured-item-img">
-            <img src = "assets/images/cookingOil.jpg" alt = "feature image">
-          </div>
-          <div class = "featured-item-content">
-            <div class = "title">
-              <h4>featured product </h4>
-              <h2>Pompeian Grapessd Oil</h2>
-              <p class = "item-price">$42.00</p>
-            </div>
-            <p class = "text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quasi consequatur veniam, veritatis necessitatibus rem voluptas pariatur doloremque id culpa, eveniet, ratione libero eos fuga.
-            </p>
-            <div class = "featured-btns">
-              <button type = "button" class = "btn">Explore</button>
-              <button type = "button" class = "btn">Purchase</button>
-            </div>
-          </div>
-        </div>
-        <!-- end of item -->
-        <!-- item -->
-        <div class = "featured-item">
-          <div class = "featured-item-img">
-            <img src = "assets/images/spices.jpg" alt = "feature image">
-          </div>
-          <div class = "featured-item-content">
-            <div class = "title">
-              <h4>featured product </h4>
-              <h2>Orignal Sub-Continent Spices</h2>
-              <p class = "item-price">$78.00</p>
-            </div>
-            <p class = "text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quasi consequatur veniam, veritatis necessitatibus rem voluptas pariatur doloremque id culpa, eveniet, ratione libero eos fuga.
-            </p>
-            <div class = "featured-btns">
-              <button type = "button" class = "btn">Explore</button>
-              <button type = "button" class = "btn">Purchase</button>
-            </div>
-          </div>
-        </div>
-        <!-- end of item -->
-        <!-- item -->
-        <div class = "featured-item">
-          <div class = "featured-item-img">
-            <img src = "assets/images/product3.jpg" alt = "feature image">
-          </div>
-          <div class = "featured-item-content">
-            <div class = "title">
-              <h4>featured product </h4>
-              <h2>Fruit Pulps</h2>
-              <p class = "item-price">$90.55</p>
-            </div>
-            <p class = "text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quasi consequatur veniam, veritatis necessitatibus rem voluptas pariatur doloremque id culpa, eveniet, ratione libero eos fuga.
-            </p>
-            <div class = "featured-btns">
-              <button type = "button" class = "btn">Explore</button>
-              <button type = "button" class = "btn">Purchase</button>
-            </div>
-          </div>
-        </div>
-        <!-- end of item -->
+    </div>
+    <!-- end of item -->
+    <!-- item -->
+    <div class = "blog-item">
+      <div class = "blog-item-img">
+        <img src = "assets/images/product1.jpg" alt = "blog image">
       </div>
-    </section>
-    <!-- end of featured product -->
-
-    <!-- blog -->
-    <section class = "blog">
-      <div class = "container">
-        <div class = "title">
-          <h4>daily update</h4>
-          <h2>latest blog</h2>
-        </div>
-
-        <div class = "blog-grid">
-          <!-- item -->
-          <div class = "blog-item">
-            <div class = "blog-item-img">
-              <img src = "assets/images/product8.jpg" alt = "blog image">
-            </div>
-            <div class = "blog-item-content">
-              <a href = "#">creative ideas for decoration</a>
-              <div>
-                <span>january 20 | design | furniture</span>
-              </div>
-            </div>
-          </div>
-          <!-- end of item -->
-          <!-- item -->
-          <div class = "blog-item">
-            <div class = "blog-item-img">
-              <img src = "assets/images/product2.jpg" alt = "blog image">
-            </div>
-            <div class = "blog-item-content">
-              <a href = "#">decorate your home with the most modern furnishings.</a>
-              <div>
-                <span>january 25 | design | furniture</span>
-              </div>
-            </div>
-          </div>
-          <!-- end of item -->
-          <!-- item -->
-          <div class = "blog-item">
-            <div class = "blog-item-img">
-              <img src = "assets/images/product1.jpg" alt = "blog image">
-            </div>
-            <div class = "blog-item-content">
-              <a href = "#">furniture designs & contemporary art</a>
-              <div>
-                <span>january 28 | design | furniture</span>
-              </div>
-            </div>
-          </div>
-          <!-- end of item -->
+      <div class = "blog-item-content">
+        <a href = "#">furniture designs & contemporary art</a>
+        <div>
+          <span>january 28 | design | furniture</span>
         </div>
       </div>
-    </section>
-    <!-- end of blog -->
+    </div>
+    <!-- end of item -->
+  </div>
+</div>
+</section>
+<!-- end of blog -->
 
-    <!--start of newsletter-->
+<!--start of newsletter-->
 
-    <section class = "newsletter">
-      <div class = "container">
-        <div class = "newsletter-content">
-          <div class = "title">
-            <h4>subscribe to our newsletter</h4>
-            <h2>Newsletter</h2>
-          </div>
-          
-          <form>
-            <div class = "form-group">
-              <input type = "email" class = "form-control" placeholder="Enter your email address">
-              <button type = "submit" class = "subscribe-btn">
-                subscribe
-                <i class = "fas fa-chevron-right"></i>
-              </button>
-            </div>
-          </form>
-
-          <div class = "circle-box circle-1"></div>
-          <div class = "circle-box circle-2"></div>
-        </div>
-      </div>
-    </section>
-    <!-- end of newsletter-->
+<section class = "newsletter">
+<div class = "container">
+  <div class = "newsletter-content">
+    <div class = "title">
+      <h4>subscribe to our newsletter</h4>
+      <h2>Newsletter</h2>
+    </div>
     
-    <!-- end of newsletter-->
+    <form>
+      <div class = "form-group">
+        <input type = "email" class = "form-control" placeholder="Enter your email address">
+        <button type = "submit" class = "subscribe-btn">
+          subscribe
+          <i class = "fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </form>
+
+    <div class = "circle-box circle-1"></div>
+    <div class = "circle-box circle-2"></div>
+  </div>
+</div>
+</section>
+<!-- end of newsletter-->
+
+<!-- end of newsletter-->
 
 
-      
 
-     <!--services------------------------->
- <section class="services">
-  <!--services-box---------->
-  <div class="services-box">
-      <i class="fas fa-shipping-fast"></i>
-      <span>Free Shipping</span>
-      <p>Free Shipping for all US order</p>
-  </div>
-  <!--services-box---------->
-  <div class="services-box">
-      <i class="fas fa-headphones-alt"></i>
-      <span>Support 24/7</span>
-      <p>We support 24h a day</p>
-  </div>
-  <!--services-box---------->
-  <div class="services-box">
-      <i class="fas fa-sync"></i>
-      <span>100% Money Back</span>
-      <p>You have 30 days to Return</p>
-  </div>
-  
+
+<!--services------------------------->
+<section class="services">
+<!--services-box---------->
+<div class="services-box">
+<i class="fas fa-shipping-fast"></i>
+<span>Free Shipping</span>
+<p>Free Shipping for all US order</p>
+</div>
+<!--services-box---------->
+<div class="services-box">
+<i class="fas fa-headphones-alt"></i>
+<span>Support 24/7</span>
+<p>We support 24h a day</p>
+</div>
+<!--services-box---------->
+<div class="services-box">
+<i class="fas fa-sync"></i>
+<span>100% Money Back</span>
+<p>You have 30 days to Return</p>
+</div>
+
 </section>
 
-  <!--footer---------------------------->
+<!--------Content /--------->
+
+
+<!--footer---------------------------->
 <footer>
   <!--copyright-------------->
   <span class="copyright">
@@ -453,8 +462,8 @@
       </form>
   </div>
 </footer>
-    <!-- end of footer -->
 
-    <script src="./assets/scripts/main.js"></script>
-  </body>
+<script src="./assets/scripts/main.js"></script>
+
+</body>
 </html>
