@@ -5,7 +5,6 @@ body{
     padding: 0px;
     font-family: poppins;
     background-color: #ffffff;
-    overflow-x: hidden;
 }
 
 *{
@@ -39,11 +38,7 @@ nav{
     color: rgba(0, 0, 0, 0.7);
     font-size: 0.9rem;
 }
-.google{
-    color: #23887c;
-    margin-left: 2.5cm;
-    
-}
+
 .phone{
     color: rgba(0, 0, 0, 0.7);
     margin-left: 30px;
@@ -65,11 +60,11 @@ nav{
 .logo img{
     width: 40px;
     margin-left: 25px;
+    margin-top: 20px;
 }
 
 .menu{
     display: flex;
-    margin-top: -1%;
 }
 
 .menu li{
@@ -300,10 +295,43 @@ nav{
     100%{
         opacity: 1;
     }
-
-
-
 }
+.services{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.services-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,0.1);
+    min-width: 250px;
+    padding: 20px;
+    margin: 15px;
+    flex-grow: 0.7;
+}
+.services-box i{
+    color: #0b9d8a;
+    font-size: 2rem;
+    margin: 15px;
+}
+.services-box span{
+    color: #222222;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+}
+.services-box p{
+    color: #878787;
+    margin: 0px;
+    font-size: 0.9rem;
+}
+
 footer{
     display: flex;
     justify-content: space-around;
@@ -352,7 +380,6 @@ footer{
 @media(max-width:1010px){
     .logo{
         margin-left: 10px;
-        width: 40%;
     }
     nav{
         position: relative;
@@ -375,7 +402,8 @@ footer{
         z-index: 102;
         flex-direction: column;
         display: none;
-  }
+ 
+    }
     .fix-nav .menu{
         top: 80px;
     }
@@ -392,6 +420,7 @@ footer{
         margin: 0px;
         padding: 25px;
         border: 1px solid rgba(0,0,0,0.03);
+
     }
     .sale-lable{
         display: none;
@@ -414,22 +443,6 @@ footer{
     .navigation.active .menu{
         display: block;
     }
-    .full-slider-box,
-    .banner-box{
-        height: 45vh;
-        background-color: #1b1919;
-    }
-    .f-slider-text span,
-    .banner-text span{
-        font-size: 0.9rem;
-        color: #fff;
-    }
-    .f-slider-text strong,
-    .banner-text strong{
-        font-size: 2rem;
-        line-height: 40px;
-
-    }
     .search-input{
         height: 60px;
     }
@@ -441,60 +454,11 @@ footer{
         height: 200px;
     }
 }
-@media(max-width:600px){
 
+
+@media(max-width:600px){
     .navigation{
         padding: 10px;
-    }
-    .f-slider-text strong,
-    .banner-text strong{
-        font-size: 1.2rem;
-        line-height: 25px;
-    }
-    .full-slider-box,
-    .banner-box{
-        height: 30vh;
-      
-    }
-    
-    .f-slider-text span,
-    .banner-text span{
-        font-size: 0.8rem;
-    }
-    .f-slider-btn,
-    .banner-btn{
-        width:120px;
-        height: 30px;
-        font-size: 0.8rem;
-    }
-    .feature-heading h2{
-        font-size: 1.2rem;
-    }
-    .feature-box{
-        width:120px;
-        height: 120px;
-    }
-    .new-arrival strong,
-    .feature-heading strong{
-        font-size: 1.2rem;
-    }
-    .new-arrival p,
-    .feature-heading p{
-        font-size: 0.8rem;
-        text-align: center;
-    }
-    .sale-box{
-        width:100%;
-        height: 180px;
-    }
-    .sale{
-        width: 100%;
-    }
-    .services{
-        width:100%;
-    }
-    .services-box{
-        width:100%;
     }
     .copyright{
         margin: 20px 0px;
@@ -508,10 +472,6 @@ footer{
         display: flex;
         width:100%;
     }
-    .logo img{
-        width: 50px;
-        margin-left: 25px;
-    }
     .subscribe input{
         width:100%;
         flex-grow: 1;
@@ -522,383 +482,169 @@ footer{
     }
 }
 
-* {
-	margin:0px;
-	padding:0px;
-}
-*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing: border-box; }
 
+ /*----Contact form styling----*/
 
-
-.f-slider-btn{
-    width: 150px;
-    height: 40px;
+ .contact{
+     position:relative;
+     min-height: 100vh;
+     padding: 50px 100px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+    background-color: rgb(205, 247, 205);
+    
+ }
+ .contact .content{
+     max-width: 800px;
+     text-align: center;
+ }
+ .contact .content h2
+ {
+     font-size: 36px;
+     font-weight: 500;
+     color: rgb(31, 19, 19);
+     
+     }
+     
+ .contact .content span
+     {
+      font-weight: 300;
+      color: rgb(15, 12, 12);
+         }
+ .container{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     margin-top: 30px;
+     align-items: center;
+ }
+ .container .contactInfo{
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+ }
+ .container .contactInfo .box{
+     position: relative;
+     display: flex;
+     padding: 20px 0;
+ }
+ .container .contactInfo .box .icon{
+    min-width: 45px;
+    height: 45px;
+    background: rgb(250, 247, 247);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    background-color: #358f84;
-    letter-spacing: 2px;
-    margin-left: 5cm;
-}
+    border-radius: 50%;
+    font-size: 22px;
+    margin-top: 0.6cm;
 
-
-body {
-	background: #ffffff;
-	color: #333;
-	font-weight: normal;
-	font-size: 1em;
-
-    
-   }
-  
-
-input:focus, textarea:focus, keygen:focus, select:focus {
-	outline: none;
-}
-::-moz-placeholder {
-	color: #666;
-	font-weight: 300;
-	opacity: 1;
-}
-
-::-webkit-input-placeholder {
-	color: #666;
-	font-weight: 300;
-}
-
-
-/* Contact Form Styling */
-.container {
-	padding: 0 50px 70px;
-}
-.textcenter {
-	text-align: center;
-}
-.section1 {
-	
-	display: table;
-    width: 100%;
-    
-}
-
-
-.section1 h1 {
-	font-size: 45px;
-	color:   #358f84;
-    font-weight: normal;
-    margin-left: 15cm;
-   
-}
-
-.section2 {
-    width: 1200px;
-    margin-left: -1.5cm;
-}
-.section2 .col2 {
-	width: 48.71%;
-}
-.section2 .col2.first {
-    float: left;
-    border-radius: 10px;
-}
-.section2 .col2.last {
-    float: right;
-    border-radius: 10px;
-}
-.section2 .col2.column2 {
-	padding: 0 30px;
-}
-.section2 span.collig {
-	color: #a2a2a2;
-	margin-right: 10px;
-	display: inline-block;
-}
-.section2 .sec2addr {
-	display: block;
-	line-height: 26px;
-}
-.section2 .sec2addr p:first-child {
-	margin-bottom: 10px;
-}
-.section2 .sec2contactform input[type="text"], 
-.section2 .sec2contactform input[type="email"],
-.section2 .sec2contactform textarea {
-    padding: 18px;
-    border: 0;
-    background: #EDEDED;
-    margin: 7px 0;
-}
-.section2 .sec2contactform textarea {
-	width: 100%;
-	display: block;
-	color: #666;
-  resize:none;
-}
-.section2 .sec2contactform input[type="submit"] {
-	padding: 15px 40px;
-    color: #fff;
-    border: 0;
-    background: #A44DD8;
-    font-size: 16px;
-    text-transform: uppercase;
-    margin: 7px 0;
-    cursor: pointer;
-}
-.section2 .sec2contactform h3 {
-	font-weight: normal;
-    margin: 20px 0;
-    margin-top: 30px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 19px;
-    color:  #358f84;
-}
-.maps iframe{
-    width: 600px;
-    height: 500px;
-    border-radius: 1cm;
-}
-.f-slider-btn
-    {
-        text-decoration: none;
-        font-size: 20px;
-        text-align: center;
-        letter-spacing: 2px;
-        border:none;
-        border-radius: 10px;
-        padding: 8px;
-        width: 150px;
-        
-        
-    }
-    .f-slider-btn:hover{
-        transition:all ease 0.3s;
-        background-color: #0b9d8a;
-        color: white;
-    }
-
-/* @media querries */
-
-@media only screen and (max-width: 960px) {
-	.container {
-		padding: 0 30px 70px;
-	}
-	.section2 .col2 {
-		width: 100%;
-		display: block;
-	}
-	.section2 .col2.first {
-		margin-bottom: 10px;
-	}
-	.section2 .col2.column2 {
-		padding: 0;
-	}
-	body .sec2map {
-		height: 250px !important;
-	}
-}
-@media only screen and (max-width: 768px) {
-	.section2 .sec2addr {
-        font-size: 14px;
-        margin-left: 1.5cm;
-    }
-  
-	.section2 .sec2contactform h3 {
-        font-size: 16px;
-        margin-left: 1.5cm;
-	}
-	.section2 .sec2contactform input[type="text"], .section2 .sec2contactform input[type="email"], .section2 .sec2contactform textarea {
-		padding: 10px;
-		margin-left: 1.5cm;
-	}
-	.section2 .sec2contactform input[type="submit"] {
-		padding: 10px 30px;
-        font-size: 14px;
-        margin-left:  1.5cm;;
-    }
-    .section1 h1 {
-         font-size: 38px;
-         margin-left: 0cm;
-         display: block;
-        }	
-        .section2 h1{
-            font-size: 25px;
-            margin-left: 1.3cm;
-        }
-        
-       
-        .maps iframe{
-            width: 450px;
-            height: 200px;
-            margin-left: 1.2cm;
-        }
-       
-       
-}
-
-@media only screen and (max-width: 420px) {
-	.section1 h1 {
-        font-size: 30px;
-       
-    }	
-    body{
-        overflow-x: hidden;
-    }
-    .maps iframe{
-        width: 375px;
-        height: 180px;
-        border-radius: 1cm;
-        
-    }
-    .section2 .sec2addr {
-        font-size: 14px;
-        margin-left: 1.4cm;
-    }
-    .section2 .sec2contactform h3 {
-        font-size: 16px;
-        margin-left: 1.1cm;
-	}
-	.section2 .sec2contactform input[type="text"], .section2 .sec2contactform input[type="email"], .section2 .sec2contactform textarea {
-		padding: 10px;
-        margin-left: 1.1cm;
-       width: 85%;
-        align-self: center;
-	}
-	.section2 .sec2contactform input[type="submit"] {
-		padding: 10px;
-        font-size: 14px;
-        margin-left:  1.1cm;;
-    }
-    
-    .section2 h1{
-        font-size: 20px;
-        margin-left: 1cm;
-    }
-    .f-slider-btn
-    {
-        text-decoration: none;
-        font-size: 20px;
-        text-align: center;
-        letter-spacing: 2px;
-        border:none;
-        border-radius: 10px;
-        padding: 8px;
-        width: 150px;
-        margin-left: 4.2cm;
-        
-        
-    }
-    .f-slider-btn:hover{
-        transition:all ease 0.3s;
-        background-color: #0b9d8a;
-        color: white;
-    }
-
-    
-    
-
-    .section2 {
-        width: 450px;
-        margin-left: -1.5cm;
-    }
-
-    
-}
-.services{
-    display: flex;
-    width: 90%;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: auto;
-  padding-top: 0.5cm;
-}
-.services-box{
-    display: flex;
+ }
+ .container .contactInfo .box .text{
+     display: flex;
+     margin-left: 20px;
+     font-size: 17px;
+     color: rgb(17, 11, 11);
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgba(0,0,0,0.1);
-    min-width: 250px;
-    padding: 20px;
-    margin: 15px;
-    flex-grow: 0.7;
+    font-weight: 300;
+
+ }
+ .container .contactInfo .box .text h3{
+     font-weight: 500;
+     color: #1e6d77;
+     font-size: 110%;
+
+ }
+ .container .contactInfo .box .text span{
+     font-size: 70%;
+     color: rgb(46, 35, 35);
+ }
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+    border-style:double;
+    
 }
-.services-box i{
-    color: #0b9d8a;
-    font-size: 2rem;
-    margin: 15px;
+.contactForm h2{
+    font-size: 30px;
+    color: rgb(10, 9, 9);
+    font-weight: 500;
 }
-.services-box span{
-    color: #222222;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    font-size: 1rem;
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
 }
-.services-box p{
-    color: #878787;
-    margin: 0px;
-    font-size: 0.9rem;
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin:10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize:none;
+
+} 
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none; 
+    transition: 0.5s;
+    color: #666666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox button[type="submit"]
+{
+    width: 100px;
+    background: #0b9d8a;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+@media (max-width: 991px)
+{
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo, .contactForm{
+        width: 100%;
+    }
+    
+
 }
 .banner-box{
     width:100%;
      height: 40vh;
-    margin: 20px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./../images/banner.jpg);
+    background-image: url(https://acabcmis.gov.in/img/010.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #1b1919;
 }
- 
-.banner-text-container{
-    width:80%;
-    height: 90%;
-    display: flex;
-    align-items: center;
-}
- 
-.banner-text{
-    display: flex;
-    flex-direction: column;
-    margin-right: auto;
-}
- 
-.banner-text strong{
-    color: #333333;
-    font-size: 3rem;
-    line-height: 55px;
-    margin-top: 10px;
-    letter-spacing: 1px;
-}
- 
-.banner-text span{
-    text-transform: uppercase;
-    letter-spacing: 6px;
-    font-weight: 500;
-    color: #666666;
-    font-size: 1.2rem;
-}
- 
-.banner-btn{
-    width:170px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    background-color: #0b9d8a;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 14px;
-}
-.banner-text strong font{
-    color: #0b9d8a;
-}
-.googles{
-    color: red;
-}
-
