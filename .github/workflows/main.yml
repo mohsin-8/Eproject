@@ -32,4 +32,4 @@ jobs:
           cmd: install
           
       - name: deploying on netlify
-        run: \Users\SAAD COMMUNICATION\Desktop\Eproject https://star-organic-farm.netlify.app/
+        run: https://star-organic-farm.netlify.app/
